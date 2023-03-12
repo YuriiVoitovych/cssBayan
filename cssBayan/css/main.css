@@ -119,4 +119,11 @@
     height: 300px;
   }
 
+      /* Стили для планшетов */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .note {
+      width: 33.33%;
+    }
+  }
+
   
