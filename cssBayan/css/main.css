@@ -1,0 +1,134 @@
+.bayan {
+    max-width: 1020px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  h1{
+    padding-bottom: 0.3em;
+    font-size: 2.5em;
+    border-bottom: 1px solid #d3d5d7;
+    line-height: 2;
+    word-wrap: break-word;
+    font-weight: bold;
+  }
+  
+  .note {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #d3d5d7;
+    padding-bottom: 0.3em;
+  }
+  
+
+  .note:hover .title{
+    color: #000;
+  }
+
+  .title{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2em;
+    color: blue;
+  }
+  
+  .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .note:hover::after {
+    content: "×";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .note:nth-child(1):hover::after {
+    content: "+";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .note:nth-child(2):hover::after {
+    content: "+";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .note:nth-child(3):hover::after {
+    content: "+";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .note:nth-child(4):hover::after {
+    content: "+";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .note:nth-child(5):hover::after {
+    content: "+";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
+  .note:hover .content {
+    display: block;
+    text-align: center;
+    visibility: visible;
+    transform: translateY(10px);
+  }
+
+  .content__img{
+    width: 300px;
+    height: 300px;
+  }
+
+      /* Стили для планшетов */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .note {
+      width: 33.33%;
+    }
+  }
+
+   /* Стили для больших экранов */
+  @media only screen and (min-width: 992px) {
+    .note {
+      /* width: 25%; */
+    }
+  }
